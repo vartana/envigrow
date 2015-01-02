@@ -1,0 +1,16 @@
+{
+  "name": "GrowControl",
+  "version": "1.0.0",
+  "description": "Control cultivation site",
+  "main": "app.js",
+  "dependencies": {
+    "node-schedule": "^0.1.15",
+    "rpi-gpio": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
