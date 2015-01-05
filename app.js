@@ -31,8 +31,12 @@ function Feed(el){
   Relay(el.circ, true);
   Relay(el.feed, false);
 
+  console.log('Feed Start ', el.circ);
+
   setTimeout(function(){
     Relay(el.circ, false);
     Relay(el.feed, true);
+
+    console.log('Feed Stop ', el.circ);
   }, el.sec * 1000)
 }
