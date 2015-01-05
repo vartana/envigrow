@@ -14,10 +14,10 @@ Trigger(allPins, true, function(err){
   }
 
   timer.forEach(function (el, index, array) {
-    var rule = new schedule.RecurrenceRule();
-    rule.minute = 90;
+    // var rule = new schedule.RecurrenceRule();
+    // rule.minute = 90;
 
-    schedule.scheduleJob(rule, Feed.bind(null, el));
+    schedule.scheduleJob('*/5 * * * *', Feed.bind(null, el));
     Relay(el.circ, false);
     Relay(el.feed, true);
   });
