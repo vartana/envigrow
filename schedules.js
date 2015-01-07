@@ -1,4 +1,8 @@
-
+// 5 = systems 1-2
+// 13 = systems 3-4
+// 3 = systems 5-6
+// 12 = system 7
+// 11 = systems 8-9
 var systems = [
   {circ: 5, feed: 21, sec: 40},
   {circ: 13, feed: 18, sec: 40},
