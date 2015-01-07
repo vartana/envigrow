@@ -19,7 +19,7 @@ Trigger(allPins, true, function(err){
       // var rule = new schedule.RecurrenceRule();
       // rule.minute = 90;
 
-      schedule.scheduleJob('*/2 * * * *', Feed.bind(null, el));
+      schedule.scheduleJob('*/90 * * * *', Feed.bind(null, el));
       Relay(el.circ, false);
       Relay(el.feed, true);
     });
