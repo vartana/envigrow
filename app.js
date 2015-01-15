@@ -23,7 +23,7 @@ function Start(){
 
       timer.forEach(function (el, index, array) {
 
-        schedule.scheduleJob('*/90 * * * *', Feed.bind(null, el));
+        schedule.scheduleJob('*/2 * * * *', Feed.bind(null, el));
         Relay(el.circ, false);
         Relay(el.feed, true);
       });
@@ -36,7 +36,7 @@ function Start(){
 
 function Feed(el){
 
-  EnviLog({ status: 'info', message: 'Feed started started'});
+  EnviLog({ status: 'info', message: 'Feed started started: '+ el.feed});
 
   Relay(el.circ, true);
   Relay(el.feed, false);
@@ -47,7 +47,7 @@ function Feed(el){
     Relay(el.circ, false);
     Relay(el.feed, true);
 
-    EnviLog({ status: 'info', message: 'Feed completed'});
+    EnviLog({ status: 'info', message: 'Feed completed: '+el.feed});
     console.log('Feed Stop ', el.circ);
   }, el.sec * 1000)
 }
