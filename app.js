@@ -1,5 +1,4 @@
 var schedule = require('node-schedule');
-var gpio = require('rpi-gpio');
 
 var Trigger = require('./lib/relay').Trigger;
 var Relay = require('./lib/relay').Relay;
