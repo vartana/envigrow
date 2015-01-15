@@ -9,28 +9,14 @@ var EnviLog = require('./lib/envilog');
 var allPins = [3, 5, 7, 8, 10, 11, 12, 13, 15, 16, 18, 19, 21, 22, 23, 24, 26, 29, 31, 32, 33, 35, 36, 37, 38, 40];
 
 EnviLog({ status: 'info', message: 'Server started'}, Start);
+EnviLog({ status: 'info', message: 'Initiated GPIO ports and 90min timer started'});
 
-function Start(){
+timer.forEach(function (el, index, array) {
 
-  Trigger(allPins, true, function(err){
-    setTimeout(function(){ 
-      if(err){
-            console.log('Error', err);
-      }
-
-      EnviLog({ status: 'info', message: 'Initiated GPIO ports and 90min timer started'});
-
-      timer.forEach(function (el, index, array) {
-
-        schedule.scheduleJob('*/2 * * * *', Feed.bind(null, el));
-        Relay(el.circ, 1);
-        Relay(el.feed, 0);
-      });
-
-
-    }, 10 * 1000);
-  }); 
-}
+  schedule.scheduleJob('*/2 * * * *', Feed.bind(null, el));
+  Relay(el.circ, 1);
+  Relay(el.feed, 0);
+});
 
 
 function Feed(el){
