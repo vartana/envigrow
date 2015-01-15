@@ -15,7 +15,7 @@ EnviLog({ status: 'info', message: 'Initiated GPIO ports and 90min timer started
 allPins.forEach(function (el, index, array) {
 
   gpio.open(el);
-}
+});
 
 timer.forEach(function (el, index, array) {
 
