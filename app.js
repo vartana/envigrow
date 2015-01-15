@@ -16,16 +16,19 @@ console.log('Initiate GPIO');
 allPins.forEach(function (el, index, array) {
 
   gpio.open(el, 'output');
+
+  if (index === array.length - 1) {
+
+    timer.forEach(function (el, index, array) {
+
+      schedule.scheduleJob('*/2 * * * *', Feed.bind(null, el));
+      Relay(el.circ, 1);
+      Relay(el.feed, 0);
+    });
+  }
 });
 
 console.log('Timer Start');
-timer.forEach(function (el, index, array) {
-
-  schedule.scheduleJob('*/2 * * * *', Feed.bind(null, el));
-  Relay(el.circ, 1);
-  Relay(el.feed, 0);
-});
-
 
 function Feed(el){
 
