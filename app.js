@@ -24,8 +24,8 @@ function Start(){
       timer.forEach(function (el, index, array) {
 
         schedule.scheduleJob('*/2 * * * *', Feed.bind(null, el));
-        Relay(el.circ, false);
-        Relay(el.feed, true);
+        Relay(el.circ, 1);
+        Relay(el.feed, 0);
       });
 
 
@@ -38,14 +38,14 @@ function Feed(el){
 
   EnviLog({ status: 'info', message: 'Feed started started: '+ el.feed});
 
-  Relay(el.circ, true);
-  Relay(el.feed, false);
+  Relay(el.circ, 0);
+  Relay(el.feed, 1);
 
   console.log('Feed Start ', el.circ);
 
   setTimeout(function(){
-    Relay(el.circ, false);
-    Relay(el.feed, true);
+    Relay(el.circ, 0);
+    Relay(el.feed, 1);
 
     EnviLog({ status: 'info', message: 'Feed completed: '+el.feed});
     console.log('Feed Stop ', el.circ);
