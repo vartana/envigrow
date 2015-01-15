@@ -1,4 +1,5 @@
 var schedule = require('node-schedule');
+var gpio = require('pi-gpio');
 
 var Trigger = require('./lib/relay').Trigger;
 var Relay = require('./lib/relay').Relay;
@@ -10,6 +11,11 @@ var allPins = [3, 5, 7, 8, 10, 11, 12, 13, 15, 16, 18, 19, 21, 22, 23, 24, 26, 2
 
 EnviLog({ status: 'info', message: 'Server started'});
 EnviLog({ status: 'info', message: 'Initiated GPIO ports and 90min timer started'});
+
+allPins.forEach(function (el, index, array) {
+
+  gpio.open(el);
+}
 
 timer.forEach(function (el, index, array) {
 
