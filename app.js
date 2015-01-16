@@ -18,6 +18,11 @@ allPins.forEach(function (el, index, array) {
     Relay(el, 1);
 });
 
+timer.forEach(function (el, index, array) {
+    
+    Relay(el.circ, 0);
+});
+
 console.log('Timer Start');
 
 schedule.scheduleJob('*/2 * * * *', function(){
