@@ -12,28 +12,39 @@ var allPins = [3, 5, 7, 8, 10, 11, 12, 13, 15, 16, 18, 19, 21, 22, 23, 24, 26, 2
 //EnviLog({ status: 'info', message: 'Server started'});
 //EnviLog({ status: 'info', message: 'Initiated GPIO ports and 90min timer started'});
 
-timer.forEach(function (el, index, array) {
+schedule.scheduleJob('*/4 * * * *', function(){
 
-  schedule.scheduleJob('*/1 * * * *', Feed.bind(null, el));
-  Relay(el.circ, 0);
-  Relay(el.feed, 1);
+  Start();
 });
 
 console.log('Timer Start');
 
-function Feed(el){
+function Start(){
+
+  timer.forEach(function (el, index, array) {
+    
+    Feed(el, true);
+
+    setTimeout(function(){
+
+      Feed(el, false);
+    },el.sec * 1000);
+  });
+}
+
+function Feed(el, on){
 
   EnviLog({ status: 'info', message: 'Feed started started: '+ el.feed});
   console.log('Feed Start ', el.circ);
 
-  Relay(el.circ, 1);
-  Relay(el.feed, 0);
-
-  setTimeout(function(){
-    console.log('Feed Stop ', el.circ);
-    EnviLog({ status: 'info', message: 'Feed completed: '+el.feed});
-
+  if(on === true){
+    Relay(el.circ, 1);
+    Relay(el.feed, 0);
+  }else{
     Relay(el.circ, 0);
     Relay(el.feed, 1);
-  }, el.sec * 1000)
+  }
+  
 }
+
+
