@@ -16,23 +16,31 @@ console.log('All Feed Off');
 allPins.forEach(function (el, index, array) {
     
     Relay(el, 1);
-});
 
-timer.forEach(function (el, index, array) {
+    if (index === array.length - 1) {
+
+      setTimeout(function(){
+        timer.forEach(function (el, index, array) {
+      
+          Relay(el.circ, 0);
+
+          if (index === array.length - 1) {
+            schedule.scheduleJob('*/2 * * * *', function(){
+
+              console.log('Timer Executed');
+              Start();
+            });
+          }
+        }, 10000);
+      })
+    }
     
-    Relay(el.circ, 0);
-});
-
-console.log('Timer Start');
-
-schedule.scheduleJob('*/2 * * * *', function(){
-
-  console.log('Timer Executed');
-  Start();
 });
 
 function Start(){
 
+  console.log('Timer Start');
+  
   timer.forEach(function (el, index, array) {
     
     Feed(el, true);
