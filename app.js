@@ -14,7 +14,7 @@ var allPins = [3, 5, 7, 8, 10, 11, 12, 13, 15, 16, 18, 19, 21, 22, 23, 24, 26, 2
 
 timer.forEach(function (el, index, array) {
 
-  schedule.scheduleJob('*/1 * * * *', Feed.bind(null, el));
+  schedule.scheduleJob('*/90 * * * *', Feed.bind(null, el));
   Relay(el.circ, 0);
   Relay(el.feed, 1);
 });
