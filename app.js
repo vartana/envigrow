@@ -25,7 +25,7 @@ allPins.forEach(function (el, index, array) {
           Relay(el.circ, 0);
 
           if (index === array.length - 1) {
-            schedule.scheduleJob('*/2 * * * *', function(){
+            schedule.scheduleJob('*/90 * * * *', function(){
 
               console.log('Timer Executed');
               Start();
@@ -40,7 +40,7 @@ allPins.forEach(function (el, index, array) {
 function Start(){
 
   console.log('Timer Start');
-  
+
   timer.forEach(function (el, index, array) {
     
     Feed(el, true);
