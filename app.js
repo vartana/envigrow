@@ -34,7 +34,7 @@ function Start(){
 function Feed(el, on){
 
   EnviLog({ status: 'info', message: 'Feed started started: '+ el.feed});
-  console.log('Feed Start ', el.circ);
+  console.log('Feed ' + on, el.circ);
 
   if(on === true){
     Relay(el.circ, 1);
