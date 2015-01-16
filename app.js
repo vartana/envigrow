@@ -25,10 +25,7 @@ function Start(){
     
     Feed(el, true);
 
-    setTimeout(function(){
-
-      Feed(el, false);
-    },el.sec * 1000);
+    setTimeout(Feed.bind(el, false), el.sec * 1000);
   });
 }
 
