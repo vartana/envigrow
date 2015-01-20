@@ -4,11 +4,11 @@
 // 12 = system 7
 // 11 = systems 8-9
 var systems = [
-  {circ: 5, feed: 21, sec: 30},
-  {circ: 13, feed: 18, sec: 30},
-  {circ: 3, feed: 24, sec: 30},
-  {circ: 12, feed: 22, sec: 30},
-  {circ: 11, feed: 19, sec: 30}
+  {circ: 5, feed: 21, sec: 40},
+  {circ: 13, feed: 18, sec: 40},
+  {circ: 3, feed: 24, sec: 40},
+  {circ: 12, feed: 22, sec: 40},
+  {circ: 11, feed: 19, sec: 40}
 ];
 
 module.exports = systems;
