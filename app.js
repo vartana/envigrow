@@ -25,9 +25,9 @@ allPins.forEach(function (el, index, array) {
           Relay(el.circ, 0);
 
           if (index === array.length - 1) {
-            schedule.scheduleJob('*/90 * * * *', function(){
+            schedule.scheduleJob('*/120 * * * *', function(){
 
-              EnviLog({ status: 'init', message: 'Cron job for system cycle every 90 minutes'});
+              EnviLog({ status: 'init', message: 'Cron job for system cycle every 120 minutes'});
               Start();
             });
           }
