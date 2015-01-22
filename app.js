@@ -32,7 +32,12 @@ allPins.forEach(function (el, index, array) {
             //   EnviLog({ status: 'test', message: 'testing minute rule for 90 minutes'});
             // });
 
-            schedule.scheduleJob('*/90 * * * *', function(){
+            schedule.scheduleJob('0 0,3,6,9,12,15,18,21 * * *', function(){
+              EnviLog({ status: 'init', message: 'Cron job for system cycle every 120 minutes'});
+              Start();
+            });
+
+            schedule.scheduleJob('30 1,4,7,10,13,16,19,22 * * *', function(){
               EnviLog({ status: 'init', message: 'Cron job for system cycle every 120 minutes'});
               Start();
             });
