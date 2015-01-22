@@ -25,12 +25,12 @@ allPins.forEach(function (el, index, array) {
           Relay(el.circ, 0);
 
           if (index === array.length - 1) {
-            var rule = new schedule.RecurrenceRule();
-            rule.minute = 90;
+            // var rule = new schedule.RecurrenceRule();
+            // rule.minute = 90;
 
-            schedule.scheduleJob(rule,function(){
-              EnviLog({ status: 'test', message: 'testing minute rule for 90 minutes'});
-            });
+            // schedule.scheduleJob(rule,function(){
+            //   EnviLog({ status: 'test', message: 'testing minute rule for 90 minutes'});
+            // });
 
             schedule.scheduleJob('*/90 * * * *', function(){
               EnviLog({ status: 'init', message: 'Cron job for system cycle every 120 minutes'});
