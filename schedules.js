@@ -9,9 +9,9 @@ var systems = [
   {circ: 3, feed: 24, sec: 35},
   {circ: 12, feed: 22, sec: 35},
   {circ: 11, feed: 19, sec: 35}
-  {circ: 7, feed: 15, sec: 35},
-  {circ: 8, feed: 16, sec: 35},
-  {circ: 10, feed: 23, sec: 35}
+  {circ: 7, feed: 23, sec: 35},
+  {circ: 8, feed: 15, sec: 35},
+  {circ: 10, feed: 16, sec: 35}
   
 ];
 
