@@ -37,8 +37,8 @@ setTimeout(function(){
         Start();
       });
     }
-  }, 60000);
-});
+  });
+}, 60000);
 
 
 function Start(){
