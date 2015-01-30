@@ -42,7 +42,7 @@ allPins.forEach(function (el, index, array) {
               Start();
             });
           }
-        }, 10000);
+        }, 35000);
       })
     }
     
