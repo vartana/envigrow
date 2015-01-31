@@ -4,11 +4,9 @@
   "description": "Control cultivation site",
   "main": "app.js",
   "dependencies": {
-    "gpio": "^0.2.6",
     "jpost": "0.0.1",
     "node-schedule": "^0.1.15",
-    "onoff": "^1.0.0",
-    "rpi-gpio": "^0.5.1"
+    "onoff": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
