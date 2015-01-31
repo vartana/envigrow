@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "jpost": "0.0.1",
-    "node-schedule": "^0.1.15"
+    "node-schedule": "^0.1.15",
+    "rpi-gpio": "^0.5.1"
   },
   "devDependencies": {},
   "scripts": {
