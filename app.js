@@ -22,7 +22,7 @@ setTimeout(function(){
       setTimeout(function(){
         EnviLog({ status: 'init', message: 'Cron job for system cycle every 5 minutes'});
         Start();
-      }, 5 * 60000)
+      }, 2 * 60000)
 
       // schedule.scheduleJob('0 0,3,6,9,12,15,18,21 * * *', function(){
       //   EnviLog({ status: 'init', message: 'Cron job for system cycle every 90 minutes'});
