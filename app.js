@@ -19,11 +19,8 @@ setTimeout(function(){
 
     if (index === array.length - 1) {
       
-      setTimeout(function(){
-        EnviLog({ status: 'init', message: 'Cron job for system cycle every 5 minutes'});
-        Start();
-      }, 2 * 60000)
-
+      TimerOn();
+      
       // schedule.scheduleJob('0 0,3,6,9,12,15,18,21 * * *', function(){
       //   EnviLog({ status: 'init', message: 'Cron job for system cycle every 90 minutes'});
       //   Start();
@@ -51,7 +48,16 @@ function Start(){
   setTimeout(function(){
 
     EnviLog({ status: 'feed', message: 'Feeding has finished'});
+    TimerOn();
   }, 40 * 1000);
+}
+
+function TimerOn(){
+
+  setTimeout(function(){
+    EnviLog({ status: 'init', message: 'Cron job for system cycle every 5 minutes'});
+    Start();
+  }, 2 * 60000)
 }
 
 function Feed(el, on){
