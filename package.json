@@ -7,6 +7,7 @@
     "gpio": "^0.2.6",
     "jpost": "0.0.1",
     "node-schedule": "^0.1.15",
+    "onoff": "^1.0.0",
     "rpi-gpio": "^0.5.1"
   },
   "devDependencies": {},
