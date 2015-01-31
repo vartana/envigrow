@@ -11,8 +11,6 @@ EnviLog({ status: 'init', message: 'Turning all relays off'});
 gpioInit();
 
 
-
-
 setTimeout(function(){
   EnviLog({ status: 'init', message: 'Turning all recirculation systems on'});
   timer.forEach(function (el, index, array) {
