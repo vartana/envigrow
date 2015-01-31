@@ -5,8 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "jpost": "0.0.1",
-    "node-schedule": "^0.1.15",
-    "onoff": "^1.0.0"
+    "node-schedule": "^0.1.15"
   },
   "devDependencies": {},
   "scripts": {
