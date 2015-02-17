@@ -55,9 +55,9 @@ function Start(){
 function TimerOn(){
 
   setTimeout(function(){
-    EnviLog({ status: 'init', message: 'Cron job for system cycle every 4 hours'});
+    EnviLog({ status: 'init', message: 'Cron job for system cycle every 4.5 hours'});
     Start();
-  }, 240 * 60000);
+  }, 270 * 60000);
 }
 
 function Feed(el, on){
