@@ -57,7 +57,7 @@ function TimerOn(){
   setTimeout(function(){
     EnviLog({ status: 'init', message: 'Cron job for system cycle every 2.5 hours'});
     Start();
-  }, 180 * 60000);
+  }, 210 * 60000);
 }
 
 function Feed(el, on){
