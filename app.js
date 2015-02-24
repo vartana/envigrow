@@ -10,6 +10,7 @@ EnviLog({ status: 'init', message: 'Server started'});
 EnviLog({ status: 'init', message: 'Turning all relays off'});
 gpioInit();
 
+console.log(timer);
 
 new procsys(timer.A, 6);
 new procsys(timer.B, 3);
