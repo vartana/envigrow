@@ -11,5 +11,5 @@ EnviLog({ status: 'init', message: 'Turning all relays off'});
 gpioInit();
 
 
-new procsys(timer.A, 210);
-new procsys(timer.B, 310);
+new procsys(timer.A, 6);
+new procsys(timer.B, 3);
