@@ -1,7 +1,6 @@
 var schedule = require('node-schedule');
 
 var gpioInit = require('./lib/relay').Init;
-var EnviLog = require('./lib/envilog');
 var timer = require('./schedules');
 var Procsys = require('./lib/procsys');
 
