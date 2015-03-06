@@ -7,10 +7,10 @@
 // 8 = systems 12-13
 //10 = systems 14-15
 var SystemA = [
-  {circ: 5, feed: 21, sec: 25},
-  {circ: 13, feed: 18, sec: 23},
-  {circ: 3, feed: 24, sec: 25},
-  {circ: 11, feed: 19, sec: 25}
+  {circ: 5, feed: 21, sec: 30},
+  {circ: 13, feed: 18, sec: 28},
+  {circ: 3, feed: 24, sec: 30},
+  {circ: 11, feed: 19, sec: 30}
   
 ];
 
