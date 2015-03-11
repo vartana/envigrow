@@ -14,11 +14,11 @@ var SystemA = [
 
 
 var SystemB = [
-  {circ: 5, feed: 21, sec: 38},
+  {circ: 5, feed: 21, sec: 35},
   {circ: 7, feed: 23, sec: 45},
   {circ: 8, feed: 15, sec: 50},
-  {circ: 13, feed: 18, sec: 33},
-  {circ: 12, feed: 22, sec: 33},
+  {circ: 13, feed: 18, sec: 30},
+  {circ: 12, feed: 22, sec: 30},
   {circ: 10, feed: 16, sec: 50}
   
 ];
