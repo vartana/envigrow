@@ -19,7 +19,7 @@ var SystemB = [
   {circ: 7, feed: 23, sec: 20},
   {circ: 13, feed: 18, sec: 20},
   {circ: 12, feed: 22, sec: 20},
-  {circ: 10, feed: 16, sec: 20
+  {circ: 10, feed: 16, sec: 20}
 ];
 
 module.exports = { A: SystemA,
