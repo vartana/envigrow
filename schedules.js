@@ -10,17 +10,16 @@ var SystemA = [
   {circ: 3, feed: 24, sec: 15},
   {circ: 8, feed: 15, sec: 20},
   {circ: 11, feed: 19, sec: 15},
-  {circ: 5, feed: 21, sec: 20},
-  {circ: 7, feed: 23, sec: 20},
-  {circ: 13, feed: 18, sec: 20},
-  {circ: 12, feed: 22, sec: 20},
-  {circ: 10, feed: 16, sec: 20}
+  {circ: 5, feed: 21, sec: 20}
   
 ];
 
 
 var SystemB = [
-  
+  {circ: 7, feed: 23, sec: 20},
+  {circ: 13, feed: 18, sec: 20},
+  {circ: 12, feed: 22, sec: 20},
+  {circ: 10, feed: 16, sec: 20
 ];
 
 module.exports = { A: SystemA,
