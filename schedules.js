@@ -8,17 +8,17 @@
 //10 = systems 14-15
 var SystemA = [
   {circ: 5, feed: 21, sec: 35},
-  {circ: 13, feed: 18, sec: 25},
-  {circ: 3, feed: 24, sec: 25},
-  {circ: 12, feed: 22, sec: 25},
-  {circ: 7, feed: 23, sec: 25},
-  {circ: 11, feed: 19, sec: 25}
+  {circ: 13, feed: 18, sec: 27},
+  {circ: 3, feed: 24, sec: 27},
+  {circ: 12, feed: 22, sec: 27},
+  {circ: 7, feed: 23, sec: 27},
+  {circ: 11, feed: 19, sec: 27}
 ];
 
 
 var SystemB = [
-  {circ: 10, feed: 16, sec: 15},
-  {circ: 8, feed: 15, sec: 15}
+  {circ: 10, feed: 16, sec: 27},
+  {circ: 8, feed: 15, sec: 27}
 ];
 
 module.exports = { A: SystemA,
