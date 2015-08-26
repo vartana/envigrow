@@ -17,7 +17,8 @@ var SystemA = [
 
 var SystemB = [
   {circ: 10, feed: 16, sec: 30},
-  {circ: 7, feed: 23, sec: 30},
+  {circ: 8, feed: 23, sec: 30},//circ was 7 changed to 8 for new system
+  {circ: 8, feed: 7, sec: 30},//added for new system in B
   {circ: 8, feed: 15, sec: 30}
 ];
 
