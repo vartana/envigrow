@@ -1,9 +1,9 @@
 // 5 = systems 1-2
 // 13 = systems 3-4
 // 3 = systems 5-6
-// 12 = system 10 --correction 7-8 box 4
+// 12 = system 10 --correction 7-8 box 4 changed on 08-25
 // 11 = systems 9
-// 7 = systems 7-8 -- correction 10-11 box 6
+// 7 = systems 7-8 -- correction 10-11 box 6 changed on 08-25
 // 8 = systems 12-13
 //10 = systems 14-15
 var SystemA = [
