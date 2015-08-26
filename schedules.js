@@ -17,8 +17,7 @@ var SystemA = [
 
 var SystemB = [
   {circ: 10, feed: 16, sec: 30},
-  {circ: 8, feed: 23, sec: 30},
-  {circ: 8, feed: 7, sec: 30},
+  {circ: 7, feed: 23, sec: 30},
   {circ: 8, feed: 15, sec: 30}
 ];
 
