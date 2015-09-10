@@ -16,4 +16,4 @@ var sysA = require('./lib/procsys');
 sysA().Init(timer.A, 125);
 
 var sysB = require('./lib/procsys');
-sysB().Init(timer.B, 125);
+sysB().Init(timer.B, 90);
