@@ -11,7 +11,7 @@ var SystemA = [
   {circ: 13, feed: 18, sec: 45},
   {circ: 3, feed: 24, sec: 45},
   {circ: 12, feed: 22, sec: 45},
-  {circ: 12, feed: 8, sec: 20},//mother systems
+  {circ: 12, feed: 8, sec: 25},//mother systems
   {circ: 11, feed: 19, sec: 25}
 ];
 
