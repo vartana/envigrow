@@ -11,7 +11,7 @@ var SystemA = [
   {circ: 13, feed: 18, sec: 45},
   {circ: 3, feed: 24, sec: 45},
   {circ: 12, feed: 22, sec: 45},
-  {circ: 12, feed: 8, sec: 10},//mother systems
+  {circ: 12, feed: 8, sec: 15},//mother systems
   {circ: 11, feed: 19, sec: 25}
 ];
 
@@ -21,7 +21,7 @@ var SystemB = [
   {circ: 12, feed: 23, sec: 25},//circ was 7 changed to 8 for new system Systems 11-12
   {circ: 12, feed: 15, sec: 25},//Systems 13-14
   {circ: 12, feed: 16, sec: 30},//System 15-16
-  {circ: 12, feed: 10, sec: 35}//test system
+  {circ: 12, feed: 10, sec: 30}//test system
 ];
 
 module.exports = { A: SystemA,
