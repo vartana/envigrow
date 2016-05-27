@@ -13,6 +13,6 @@ gpioInit();
 console.log(timer.A);
 
 var sysA = require('./lib/procsys');
-sysA().Init(timer.A, 110);
+sysA().Init(timer.A, 115);
 var sysB = require('./lib/procsys');
-sysB().Init(timer.B, 110);
+sysB().Init(timer.B, 115);
