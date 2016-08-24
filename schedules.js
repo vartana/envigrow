@@ -1,17 +1,17 @@
 // 5 = systems 1-2
-// 13 = systems 3-4
-// 3 = systems 5-6
-// 12 = system 10 --correction 7-8 box 4 changed on 08-25
-// 11 = systems 9
-// 7 = systems 7-8 -- correction 10-11 box 6 changed on 08-25
+// 13 = systems 3
+// 3 = systems 4-6
+// 12 = system 6-7 box 4 changed on 08-24
+// 11 = systems 8-9
+// 7 = systems 7-8 -- correction 10-11 box 6 changed on 08-24
 // 8 = systems 12-13
 //10 = systems 14-15
 var SystemA = [
   {circ: 5, feed: 21, sec: 8},
-  {circ: 13, feed: 18, sec: 8},
+  {circ: 13, feed: 18, sec: 5},
   {circ: 3, feed: 24, sec: 8},
-  {circ: 11, feed: 19, sec: 10},
-  {circ: 12, feed: 22, sec: 10}
+  {circ: 11, feed: 19, sec: 8},
+  {circ: 12, feed: 22, sec: 8}
 ];
 
 
