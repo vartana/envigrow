@@ -10,7 +10,8 @@ var SystemA = [
   {circ: 5, feed: 21, sec: 5},
   {circ: 13, feed: 18, sec: 5},
   {circ: 3, feed: 24, sec: 5},
-  {circ: 11, feed: 19, sec: 5}
+  {circ: 11, feed: 19, sec: 5},
+  {circ: 12, feed: 22, sec: 10}
 ];
 
 
@@ -19,8 +20,7 @@ var SystemB = [
   {circ: 12, feed: 23, sec: 25},//circ was 7 changed to 8 for new system Systems 11-12
   {circ: 12, feed: 15, sec: 25},//Systems 13-14
   {circ: 12, feed: 16, sec: 30},//System 15-16
-  {circ: 12, feed: 10, sec: 20},
-  {circ: 12, feed: 22, sec: 10}//---this is system 7 in roomb A modified 08 26
+  {circ: 12, feed: 10, sec: 20}
 ];
 
 module.exports = { A: SystemA,
