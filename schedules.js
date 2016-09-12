@@ -1,7 +1,7 @@
 // 5 = systems 1-2
-// 13 = systems 3-4
-// 3 = systems 5-6
-// 12 = system 7 -----changed on 08-24
+// 13 = systems 4
+// 3 = systems 3-5
+// 12 = system 6-7
 // 11 = systems 8-9
 // 7 = systems 7-8 -- correction 10-11 box 6 changed on 08-24
 // 8 = systems 12-13
