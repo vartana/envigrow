@@ -7,10 +7,11 @@
 // 8 = systems 12-13
 //10 = systems 14-15
 var SystemA = [
-  {circ: 5, feed: 21, sec: 12},
-  {circ: 13, feed: 18, sec: 12},
-  {circ: 3, feed: 24, sec: 12},
-  {circ: 11, feed: 19, sec: 12}
+  {circ: 5, feed: 21, sec: 7},
+  {circ: 13, feed: 18, sec: 7},
+  {circ: 3, feed: 24, sec: 7},
+  {circ: 11, feed: 19, sec: 7},
+  {circ: 12, feed: 22, sec: 7}
 ];
 
 
@@ -19,8 +20,7 @@ var SystemB = [
   {circ: 12, feed: 23, sec: 12},//circ was 7 changed to 8 for new system Systems 11-12
   {circ: 12, feed: 15, sec: 12},//Systems 13-14
   {circ: 12, feed: 16, sec: 12},//System 15-16
-  {circ: 12, feed: 10, sec: 12},
-  {circ: 12, feed: 22, sec: 12} //This is the real System in room A
+  {circ: 12, feed: 10, sec: 12}
 ];
 
 module.exports = { A: SystemA,
